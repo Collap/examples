@@ -1,0 +1,7 @@
+; See Greeting.bryg for details.
+opt String name
+
+if name !== null
+  title: Hello \{name}
+else
+  title: Hello?

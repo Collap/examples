@@ -1,0 +1,6 @@
+# The name of the module must be unique.
+name: examples-hello
+
+# This is the full name of the class that is used as the entry point to the module,
+# and represents the module.
+mainClass: io.collap.examples.hello.HelloModule

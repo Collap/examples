@@ -1,0 +1,9 @@
+; No parameters.
+
+p: Please enter your name:
+
+; TODO: The path to the controller is currently hardcoded. The controller needs to know about its own location and pass it to bryg.
+form(name 'hello', method 'post', action basePath + 'examples/hello')
+  input(type 'text', id 'name', name 'name')
+
+  input(type 'submit', value 'Submit')

@@ -1,0 +1,11 @@
+; The name of the user that needs to be greeted.
+opt String name     ; This parameter is optional, so it can be null
+
+if name !== null    ; Check whether the parameter exists
+  ; A string begins after the colon. \{name} interpolates the string with the variable name.
+  ; An interpolation is a bryg expression that yields a non-void value, embedded into a string.
+  h2: Hello \{name}!
+  p: How are you?
+  ; TODO: Possibly another form?
+else
+  h2: I don't know you!
