@@ -21,7 +21,7 @@ public class HelloModule extends Module implements BrygProvider, EnvironmentConf
     /* The version and artifact name are important for the template source loader to find the sources.
      * The name and version must NOT differ from the values defined in this module's build.gradle. */
     public static final String VERSION = "0.1";
-    public static final String ARTIFACT_NAME = "examples-hello-name-" + VERSION;
+    public static final String ARTIFACT_NAME = "examples-hello-" + VERSION;
 
     private Environment bryg;
 
