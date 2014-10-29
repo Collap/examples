@@ -2,8 +2,6 @@ archivesBaseName = 'hello'
 version = '0.1'
 
 jar {
-    manifest {
-        attributes 'Implementation-Title': 'examples-' + archivesBaseName, 'Implementation-Version': version
-    }
+    baseName = 'examples-hello'
 }
 
