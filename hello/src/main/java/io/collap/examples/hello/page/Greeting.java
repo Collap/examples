@@ -1,6 +1,7 @@
 package io.collap.examples.hello.page;
 
 import io.collap.bryg.environment.Environment;
+import io.collap.bryg.model.BasicModel;
 import io.collap.bryg.model.Model;
 import io.collap.controller.ModuleController;
 import io.collap.controller.communication.Response;
@@ -28,7 +29,7 @@ public class Greeting extends ModuleController implements BrygDependant {
     public void doGet (Response response) throws IOException {
         /* For more detailed explanations about these methods, check the doPost method below. */
 
-        Model model = bryg.createModel ();
+        Model model = new BasicModel ();
 
         bryg.getTemplate ("NameForm").render (response.getContentWriter (), model);
         bryg.getTemplate ("NameForm_head").render (response.getHeadWriter (), model);
@@ -45,7 +46,7 @@ public class Greeting extends ModuleController implements BrygDependant {
 
         /* A model should be created with the Environment's createModel method
          * to include global variables defined in the module. */
-        Model model = bryg.createModel ();
+        Model model = new BasicModel ();
 
         /* The name argument is set here.
          * A variable with the value 'null' and an undefined variable are essentially the same when
